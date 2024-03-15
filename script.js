@@ -1,4 +1,5 @@
 document.getElementById('generateMeme').addEventListener('click', function() {
+    console.log('Button clicked');
     fetch('https://api.imgflip.com/get_memes')
         .then(response => response.json())
         .then(data => {
